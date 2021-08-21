@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <!-- bootstap link file  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .hr{
+            width: 50%;
+        }
+        .pdding{
+            margin-right: 10px;
+        }
+        .td-left{
+            padding-left: 80px;
+        }
+        .total{
+            padding-left: 140px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="img-fluid" src="images/mac.png" alt="">
+                </div>
+                <div class="col-md-7">
+                    <h1>Customize yout Blue 24-inch <br> iMac with Apple M1 chip</h1>
+                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4-efficiency cores, 7-core GPU and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/ USB 4 ports Magic Mouse Magic Keyboard- US English.</p>
+                    <div class="mb-5">
+                        <h5>Memory</h5>
+                        <button id="memory-8gb" class="bg-white rounded border-1">8GB unified memory</button>
+                        <button id="memory-16gb" class="bg-white rounded border-1">16GB unified memory</button>
+                    </div>
+                    <div class="mb-5">
+                        <h5>Storage</h5>
+                        <button id="storage-256gb" class="bg-white rounded border-1">256GB SSD storage</button>
+                        <button id="storage-512gb" class="bg-white rounded border-1">512GB SSD storage</button>
+                        <button id="storage-1tb" class="bg-white rounded border-1">1TB SSD storage</button>
+                    </div>
+                    <div class="mb-5">
+                        <h5>Choose Your delivery option</h5>
+                        <button id="free-shipping" class="bg-white rounded border-1">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="cost-shipping" class="bg-white rounded border-1">Friday, Aug 21 Delivery charge $20</button>
+                    </div>
+                    <div class="mb-5">
+                        <table>
+                            <tr>
+                                <td>Best Price</td>
+                                <td class="td-left">$<span id="price">1299</td>
+                            </tr>
+                            <tr>
+                                <td>Extra Memory Cost</td>
+                                <td class="td-left">$<span id="memoryCostField">0</span></td>
+                            <tr>
+                                <td>Extra Storage Cost</td>
+                                <td class="td-left">$<span id="storage-cost-field">0</span></td>
+                            </tr>
+                            <tr>
+                                <td>Delivery Charge</td>
+                                <td class="td-left">$<span id="delevary-cost-field">0</span></td>
+                            </tr>
+                            </tr>
+                        </table>
+                        <hr class="hr">
+                        <table>
+                        <tr class="tr">
+                            <td>Total Price</td>
+                            <td class="total">$<span id="total-price">1299</span></td>
+                        </tr>
+                        </table>
+                    <div class="mt-3">
+                    
+                        <h6>Add Promo Code</h6>
+                        <input id="input-code" type="text" placeholder="Enter Code" >
+                        <button id="click-button" type="button" class="btn btn-danger text-white rounded">Apply</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <h1 class="text-center">Total: $<span id="final-total">1299</span></h1>
+        </section>
+    </header>
+    <!-- javaScript link files  -->
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
